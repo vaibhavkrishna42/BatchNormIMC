@@ -3,3 +3,5 @@
 
 ### Run the following line in terminal to generate the output of the Convolution + BatchNorm layers
 `python batchnorm.py --input_tensor conv1_input.pth --weight_tensor conv1_weights.pth --x_bits 6 --w_bits 9 --Rc Rc_resnet50_cifar10.pth --Tc Tc_resnet50_cifar10.pth`
+
+### Software baseline accuracy (all tensors on CPU) = 89.84375%
