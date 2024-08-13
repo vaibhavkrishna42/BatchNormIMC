@@ -12,7 +12,7 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description="ResNet with quantization")
     parser.add_argument('--xq', type=int, help='Quantization bits for input tensors (default: 3)')
     parser.add_argument('--wq', type=int, help='Quantization bits for weights (default: 4)')
-    parser.add_argument('--use_device', type=str, help='Choose whether to run on CPU or GPU')
+    parser.add_argument('--use_device', type=str, default='GPU', help='Choose whether to run on CPU or GPU')
     parser.add_argument('--run_type', type=str, default="BASELINE", help='Choose between quantised/unquantised run')
     return parser.parse_args()
 
