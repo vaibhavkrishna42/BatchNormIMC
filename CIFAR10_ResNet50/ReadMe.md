@@ -1,6 +1,6 @@
 ### Run the following line in terminal to run the Neural Network inference
-`python inference.py --xq 4 --wq 4 --use_device 'CPU' --run_type 'BASELINE'`
-`use_device = 'CPU' or 'GPU'`
+`python inference.py --xq 4 --wq 4 --use_device 'CPU' --run_type 'BASELINE'`  
+`use_device = 'CPU' or 'GPU'`  
 `run_type = 'BASELINE' or 'QUANTISED'`
 
 ### Run the following line in terminal to generate the output of the Convolution layer only
