@@ -6,6 +6,9 @@
 ### Run the following line in terminal to generate the output of the Convolution layer only
 `python conv.py --input conv1_input.pth --weights conv1_weights.pth --x-bits 6 --w-bits 9`
 
+### Run the following line in terminal to generate the output of the Convolution layer only with control over MAC length and ADC/TDC bits
+`python mac_length_conv.py --input conv1_input.pth --weights conv1_weights.pth --x-bits 6 --w-bits 9 --B_ADC 7 --MAC_length 256`
+
 ### Run the following line in terminal to generate the output of the Convolution + BatchNorm layers
 `python batchnorm.py --input_tensor conv1_input.pth --weight_tensor conv1_weights.pth --x_bits 6 --w_bits 9 --Rc Rc_resnet50_cifar10.pth --Tc Tc_resnet50_cifar10.pth`
 
