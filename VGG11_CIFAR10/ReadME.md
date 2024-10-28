@@ -12,4 +12,8 @@ Output file name should be of the kind : `conv_out/conv1/CONV_OUT_LAYER1_6BX_9BW
 
 ### Running inference on the test dataset (CIFAR10)  
 `python inference_vgg11_cifar10.py --num_images 1000 --layer 1 --file 'conv_out\conv1\CONV_OUT_LAYER1_6BX_9BW_4BADC_256MAC_20CLIP.pt'`  
-Choose a layer and a CONV_OUT file to run the inference with.
+Choose a layer and a CONV_OUT file to run the inference with.  
+
+### Finding clipping points for OCC
+`python occ.py --file "OCC_MACValues/conv1/MACVALUES_LEN256_LAYER1_ITER0.pt" --xr_start 10 --xr_end 256 --B_start 3 --B_end 5 --layer 1`  
+Choose a MAC tensor (from the OCC_MACValues folder), range of clipping point to iterate through, and range of ADC bits to iterate through.
